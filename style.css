@@ -312,15 +312,12 @@ header .container {
     gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
 }
-
-
 /* small screens and tablets screen */
 @media (max-width:768px) {
     .articles-content {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 /* smallest mobile screen */
 @media (max-width:380px) {
     .articles-content {
@@ -386,7 +383,6 @@ header .container {
 .card-btn:hover i {
     animation: card-btn 0.5s infinite;
 }
-
 /*------------end articles---------------*/
 /* -------------mega menu-------------- */
 .mega-menu {
@@ -404,7 +400,6 @@ header .container {
     box-shadow: var(--shadow);
     transition: 0.3s;
 }
-
 .other-links:hover .mega-menu {
     top: 75px;
     z-index: 100;
@@ -458,7 +453,6 @@ header .container {
     color: var(--main-color);
     font-weight: 500;
 }
-
 @media (max-width:380px) {
     .mega-list-link {
         font-size: 12px;
@@ -474,7 +468,6 @@ header .container {
         border-bottom: 2px solid #ddd;
     }
 }
-
 @media (max-width:768px) {
     .mega-menu {
         top: 200px;
@@ -492,10 +485,8 @@ header .container {
         font-size: 15px;
     }
 }
-
 /* -----------end mega menu-------------- */
 /* -----------start gallery-------------- */
-
 .gallery {
     padding: var(--padding-sections);
     height: fit-content;
@@ -547,7 +538,6 @@ header .container {
     overflow: hidden;
     position: relative;
 }
-
 .box-image::before {
     content: '';
     position: absolute;
@@ -564,7 +554,6 @@ header .container {
 .box-image:hover::before {
     animation: flash 0.5s;
 }
-
 @keyframes flash {
 
     0%,
@@ -581,8 +570,6 @@ header .container {
 
 /* -----------end gallery-------------- */
 /* -----------start features-------------- */
-.features {}
-
 .features .container {
     display: flex;
     flex-direction: column;
@@ -605,7 +592,6 @@ header .container {
     gap: 2rem;
     background-color: red;
 }
-
 .feature-image img {
     max-width: 100%;
 }
@@ -627,5 +613,4 @@ header .container {
     left: 50%;
     transform: translateX(-50%);
 }
-
 /* -----------end features-------------- */
