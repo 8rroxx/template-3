@@ -251,6 +251,7 @@ header .container {
     padding: 1rem;
     border: 2px solid var(--black);
     position: relative;
+    z-index: 2;
 }
 
 .special-title::before {
@@ -493,3 +494,138 @@ header .container {
 }
 
 /* -----------end mega menu-------------- */
+/* -----------start gallery-------------- */
+
+.gallery {
+    padding: var(--padding-sections);
+    height: fit-content;
+    background-color: var(--bg-color);
+}
+
+.gallery .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-content {
+    padding: 3rem 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.box {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.box img {
+    max-width: 100%;
+}
+
+.box:hover img {
+    animation: box 0.5s forwards;
+    transition: var(--transition-duration);
+}
+
+.box img {
+    max-width: 100%;
+}
+
+@keyframes box {
+    100% {
+        transform: scale(1.2) rotate(5deg);
+    }
+}
+
+.box-image {
+    overflow: hidden;
+    position: relative;
+}
+
+.box-image::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+}
+
+.box-image:hover::before {
+    animation: flash 0.5s;
+}
+
+@keyframes flash {
+
+    0%,
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 200%;
+        height: 200%;
+    }
+}
+
+/* -----------end gallery-------------- */
+/* -----------start features-------------- */
+.features {}
+
+.features .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-content {
+    padding: 3rem 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.feature {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: red;
+}
+
+.feature-image img {
+    max-width: 100%;
+}
+
+.feature-info h2 {
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.feature-info h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25%;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* -----------end features-------------- */
