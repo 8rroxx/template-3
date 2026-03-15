@@ -625,7 +625,7 @@ header .container {
     position: absolute;
     content: '';
     border-style: solid;
-    border-width: 0px 0px 170px 400px;
+    border-width: 0px 0px 170px 600px;
     border-color: transparent transparent #fff transparent;
     bottom: 0;
     right: 0;
@@ -636,7 +636,7 @@ header .container {
     position: absolute;
     content: '';
     border-style: solid;
-    border-width: 0px 400px 170px 0px;
+    border-width: 0px 600px 170px 0px;
     border-color: transparent transparent #fff transparent;
     bottom: 0;
     left: 0;
